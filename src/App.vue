@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <Header-vue></Header-vue>
+    <HomeVue></HomeVue>
+    <!-- <MenuVue /> -->
+    <AdminVue />
+    <NewPizza />
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderVue from './components/HeaderVue.vue'
+import HomeVue from './components/HomeVue.vue'
+// import MenuVue from './components/MenuVue.vue'
+import AdminVue from './components/AdminVue.vue'
+
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderVue,
+    HomeVue,
+    // MenuVue,
+    AdminVue,
+    
+
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+ 
 }
 </style>
